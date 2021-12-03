@@ -1,0 +1,50 @@
+# MOD102 Solutions Guide
+
+## What to look for
+
+There is a working link to a Gist
+
+**Q1**
+The n_nucleo function code chunk has been copied and there is additional code that runs n_nuclo on each of the four nucleotides
+
+**Q2**
+The gc_content function is filled in and correctly outputs the proportion of Gs and Cs in the nucleotide string passed in
+
+**Q3**
+A function that counts the number of point mutations between two genes (i.e. two gene sequences passed in as parameters).
+
+**Q4**
+A chunk of old code has been copied and there is a description of:
+- what task the code snippet performs
+- what variables could be turned into general parameters
+- a name for the new function
+
+**Q5**
+Response to the prompt: Would replacing the code snippet with your function's name make the code more readable? If the answer is no, a replacement for the name.
+
+**Q6**
+Line of code that subsets the penguins dataset by species and uses the function ith_bill to find the third longest bill for each species
+
+**Q7**
+Explanation of why ith_bill_impure() is impure, and an example of a situation when the same input can return different values.
+
+Example explanation: If the penguins dataframe is changed at any point, the ith longest bill will be different before and after that change is made. For example, if the global penguins variable is set to equal a subsetted version of the penguins dataframe, or an entirely different dataset altogether, then ith_bill_impure with return the ith longest bill of two different dataframes, despite passing in the same "i" parameter. 
+
+**Q8**
+Pure:
+sqrt()
+lm()
+
+Impure:
+rnorm() - stochasticity
+read.csv() - can be different depending on the OS
+write.csv() - alters user's disk space
+
+**Q9**
+Three pure functions are complete based on provided spaghetti code:
+  prepare_data()
+  find_clusters()
+  assess_clusters()
+
+**Q10**
+Code chunk copied and the functions body_condition() and condition_trend() are complete, such that running the ggplot code outputs a violoin plot like the one shown under Q10 in MOD102.
